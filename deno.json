@@ -1,0 +1,14 @@
+{
+  "importMap": "import_map.json",
+  "tasks": {
+    "dev": "deno run -A --watch=static/,routes/ dev.ts",
+    "start": "deno run -A main.ts",
+    "migrate:up": "deno run -A db/migrate.ts up",
+    "migrate:down": "deno run -A db/migrate.ts down",
+    "fmt": "deno fmt",
+    "lint": "deno lint"
+  },
+  "fmt": {
+    "singleQuote": true
+  }
+}
